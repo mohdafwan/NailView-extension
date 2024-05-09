@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  user-select: none;
+  font-family: "Pixelify Sans", cursive;
+  margin: auto;
+  background-color: black;
+  height: 13rem;
+  width: 12rem;
+  border: 1px solid green;
+}
+.container {
+  padding: 10px 10px 10px 10px;
+}
+.context-Logo {
+  display: flex;
+  justify-content: center;
+}
+.context-Text {
+  padding-top: 10px;
+  text-align: center;
+  text-decoration: line-through;
+  color: rgba(255, 255, 255, 0.918);
+  font-size: 1.1rem;
+}
+

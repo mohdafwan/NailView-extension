@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "NailView Animal's",
+  "description": "NailView Awasome Browser default chrome overrides Tool for Custom design ",
+  "version": "0.0.1",
+
+  "background": {
+    "service_worker": "./background.js"
+  },
+  "permissions": ["identity", "identity.email"],
+
+  "icons": {
+    "16": "/asset/icons.png",
+    "32": "/asset/icons.png",
+    "42": "/asset/icons.png"
+  },
+  "action": {
+    "default_popup": "/frontEnd/popup.html",
+    "default_icon": "/asset/icons.png"
+  },
+  "chrome_url_overrides": {
+    "PAGE_TO_OVERRIDE": "./frontEnd/default.html",
+    "newtab": "./frontEnd/default.html"
+  }
+}

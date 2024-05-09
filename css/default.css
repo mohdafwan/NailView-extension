@@ -1,0 +1,132 @@
+@font-face {
+  font-family: press;
+  src: url('/asset/press.ttf');
+}
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+body {
+  background-image: url('https://images.hdqwalls.com/download/abstract-lines-dark-4k-mg-2880x1800.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  color: white;
+  font-family: 'press';
+  user-select: none;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container > .header-bar-link {
+  display: flex;
+  padding-top: 30px;
+  padding-right: 20px;
+  justify-content: end;
+  font-size: 0.6rem;
+  font-weight: w800;
+}
+#herfLink {
+  color: white;
+  text-decoration: none;
+}
+.container > .container-time {
+  display: flex;
+  font-size: 2rem;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+}
+.container-time > #showDate {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 19px;
+  font-size: 10px;
+}
+.slider-shortCutBar {
+  display: flex;
+  font-size: 7px;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.slider-bar {
+  border-radius: 1px;
+  border: 1px solid black;
+  padding: 10px 10px 10px 10px;
+  background-color: #25252569;
+  display: flex;
+  width: 13rem;
+  justify-content: space-between;
+}
+.slider-bar:hover {
+  background-color: #252525;
+}
+
+.getTheDay {
+  font-size: 10px;
+  font-weight: 100;
+}
+
+/* model Screen */
+
+.pop-modelOnScreen-DEV,
+.pop-modelOnScreen-TAB {
+  background-color: #25252569;
+  color: #ffffff;
+  width: auto;
+  padding: 10px 10px 10px 10px;
+  border-radius: 3px;
+  height: auto;
+  text-align: center;
+  display: block;
+  position: absolute;
+  bottom: 4.2rem;
+  left: 1rem;
+  z-index: -1000;
+  opacity: 0;
+  transition: all 0.4s;
+}
+#rotateP-DEV,
+#rotateP-TAB {
+  rotate: -135deg;
+  transition: all 0.5s;
+}
+td {
+  font-size: 7px;
+  line-height: 8px;
+  text-align: left;
+  font-weight: lighter;
+  padding: 5px 10px 5px 10px;
+  width: auto;
+  color: #ffffff96;
+  /* border: 1px solid #5b5b5b; */
+  /* background-color: #363636; */
+
+  border-radius: 2px;
+}
+
+@media(max-width: 800px) {
+  .pop-modelOnScreen-DEV,.pop-modelOnScreen-TAB{
+    display: none;
+  }.slider-bar{
+    display: none;
+  }#showTimer{
+    font-size: 40px;
+  }
+}
+@media(max-width:400px) {
+  #showDate{
+    font-size: 8px;
+  }
+  #showTimer{
+    font-size: 30px;
+  }
+}
