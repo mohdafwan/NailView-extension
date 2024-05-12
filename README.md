@@ -1,6 +1,6 @@
 # NailView Extension
 
-![UI](https://i.imghippo.com/files/rkvsa1715450509.png)
+![UI](https://i.imghippo.com/files/kJ04M1715485053.gif)
 This is the repository for the NailView extension. The extension aims to customize the browser tab screen to a custom design.
 
 ## Installation
